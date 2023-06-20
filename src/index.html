@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmoteka</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <header class="home-header header">
+      <div class="container">
+        <nav class="navigation">
+          <a href="" class="logo-link link">
+            <img src="./images/logo.png" alt="" width="24px" height="24px" />
+            <span class="logo-discription">Filmoteka</span>
+          </a>
+
+          <ul class="nav-list list">
+            <li class="nav-list__item">
+              <a class="nav-list__link active-page link" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link link" href="./library.html">My library</a>
+            </li>
+          </ul>
+        </nav>
+        <form action="" class="search-form">
+          <div class="search-container">
+            <input class="search-input" type="text" name="search" placeholder="Movie search" />
+            <button type="submit" class="search-btn">
+              <!-- <img src="./images/search.png" alt=""> -->
+            </button>
+            <p class="search-error">
+              Search result not successful. Enter the correct movie name and
+            </p>
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1 hidden>Filmoteka</h1>
+      <div class="container">
+        <ul class="filmoteka-list list"></ul>
+      </div>
+
+      <div class="container pagination">
+        <a href="" class="pagination-left"></a>
+        <ul class="pagination-list list"></ul>
+        <a href="" class="pagination-right"></a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <span>© 2020 | All Rights Reserved |</span>
+        <span>
+          Developed with
+          <svg height="13" width="14">
+            <use href="./images/icons.svg#icon-favorite"></use>
+          </svg>
+          by GoIT Students
+        </span>
+      </div>
+    </footer>
+
+    <div class="spinner">...Loading</div>
+
+    <div class="backdrop is-hidden">
+      <div class="modal-movie">
+        <button class="modal__close-btn">
+          <svg width="30px" height="30px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="modal-content">
+          
+        </div>
+        
+        <!-- <div class="modal-img-wrapper">
+          <img src="./images/Rectangle 12.jpg" alt="">
+        </div>
+        
+        
+        <div class="modal__discription-wrapper">
+          <h3 class="modal__title">A FISTFUL OF LEAD</h3>
+          <ul class="modal__discription-list list">
+            <li class="modal__discription-item">
+              <span class="modal__discription-title">Vote / Votes</span><span class="modal-value active">7.3</span> / <span class="modal-value">1260</span>
+            </li>
+            <li class="modal__discription-item">
+              <span class="modal__discription-title">Popularity</span><span class="modal-value">100.2</span>
+            </li>
+            <li class="modal__discription-item">
+              <span class="modal__discription-title">Original Title</span><span class="modal-value">A FISTFUL OF LEAD</span>
+            </li>
+            <li class="modal__discription-item">
+              <span class="modal__discription-title">Genre</span><span class="modal-value">Western</span>
+            </li>
+          </ul>
+  
+          <h4 class="modal-about">About</h4>
+          <p class="modal-about-text">Four of the West’s most infamous outlaws assemble to steal a huge stash of gold from the most corrupt settlement of the gold rush towns. But not all goes to plan one is killed and the other three escapes with bags of gold hide out in the abandoned gold mine where they happen across another...</p>
+          <div class="modal-btn-wrapper">
+            <button class="modal-btn">add to Watched</button>
+            <button class="modal-btn">add to queue</button>
+          </div> -->
+
+        <!-- </div> -->
+        
+
+      </div>
+    </div>
+    
+
+  </body>
+</html>
