@@ -83,8 +83,8 @@ function search(event) {
   event.preventDefault();
   let query = event.currentTarget.elements.search.value;
   dataApi.setQuery(query);
-  page = 1;
-  activePage = 1;
+  //let page = 1;
+  //activePage = 1;
   loadData();
 }
 
