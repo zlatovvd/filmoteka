@@ -81,7 +81,7 @@ function handlePagination(event) {
 
 function search(event) {
   event.preventDefault();
-  query = event.currentTarget.elements.search.value;
+  let query = event.currentTarget.elements.search.value;
   dataApi.setQuery(query);
   page = 1;
   activePage = 1;
