@@ -35,7 +35,7 @@ const queue = window.localStorage.getItem('queue')
 let currentMovie;
 let genres = null;
 let movies = null;
-const apiKey = 'bf849ac9154ddcf14074361fb0f94011';
+//const apiKey = 'bf849ac9154ddcf14074361fb0f94011';
 
 const dataApi = new movieApi();
 const pagination = new Pagination();
